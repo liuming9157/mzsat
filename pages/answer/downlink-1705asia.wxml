@@ -1,0 +1,6 @@
+<!--pages/answer/downlink-1705asia.wxml-->
+<view class='linkcontainer'>
+<view class='test02'>1705亚太真题下载地址</view>
+<text class='link02' selectable='true'>{{url}}</text>
+<button class='button' bindtap='copy'>一键复制</button>
+</view>

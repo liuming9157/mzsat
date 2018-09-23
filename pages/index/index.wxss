@@ -1,0 +1,31 @@
+/**index.wxss**/
+page{
+  background-color: #ccccff
+}
+.test{
+  width: 33%;
+  text-align: center;
+  font-size: medium
+}
+.link{
+  color: blue
+}
+.head{
+  text-align: center;
+  font-size: small
+}
+.title{
+  font-size: small;
+  margin: 10px
+}
+image{
+  width: 50px;
+  height: 50px
+}
+.linkall{
+  text-align: center;
+  background-color: #6699ff;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px
+}
