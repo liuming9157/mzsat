@@ -1,25 +1,22 @@
-/* pages/index/home.wxss */
-.container02{
-  font-size: small;
-  margin: 10px
-}
-.foot{
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  width: 100%
- 
-}
-.footItem{
-  margin: 3px;
-  color: #7a7e83
-}
-.phoneNumber{
-  color: blue;
-  margin: 3px
-}
+
 page{
   background-color: white
+}
+.container{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.title{
+  font-size: 18px;
+  width: 710rpx;
+  
+  border-bottom: 1rpx solid;
+  margin-top: 20px
+}
+.article{
+  margin-top: 5px;
+  font-size: 14px;
+  width: 710rpx;
 }
 /*微信头像及昵称*/
 .userinfo {

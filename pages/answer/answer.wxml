@@ -1,0 +1,37 @@
+<!--pages/answer/answer-og1.wxml-->
+<!--顶部导航栏-->
+ <view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+  
+<!--阅读-->  
+<view hidden="{{currentTab!==0}}">  
+  <view class="container">
+ <view class="choice" wx:for="{{array}}">{{item}}</view>
+ <view class="choice" wx:for="{{reading}}">{{item}}</view>
+</view> 
+</view>  
+  
+<!--文法-->  
+<view hidden="{{currentTab!==1}}">   
+  <view class="container">
+ <view class="choice" wx:for="{{array}}">{{item}}</view>
+ <view class="choice" wx:for="{{writing}}">{{item}}</view>
+ </view>  
+</view>  
+  
+<!--数学1-->  
+<view hidden="{{currentTab!==2}}">  
+  <view class="container">
+ <view class="choice" wx:for="{{array}}">{{item}}</view>
+ <view class="choice" wx:for="{{math1}}">{{item}}</view>
+</view>  
+</view>  
+
+<!--数学2-->  
+<view hidden="{{currentTab!==3}}">  
+  <view class="container">
+ <view class="choice" wx:for="{{array}}">{{item}}</view><view class="choice" wx:for="{{math2}}">{{item}}</view>
+
+</view> 
+</view> 

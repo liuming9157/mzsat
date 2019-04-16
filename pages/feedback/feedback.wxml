@@ -1,0 +1,33 @@
+<view class='container'>
+  <view>感谢以下老师及同学帮助我们纠正小程序中的错误答案</view>
+  <view>{{system.name_list}}</view>
+</view>
+
+<form bindsubmit='formSubmit'>
+  <view class='container'>
+    <textarea name='mistake' placeholder='请在此处输入您发现的错题，例如：1803北美真题阅读第5题，应该选B,理由是... '></textarea>
+  </view>
+
+  <view class='container'>
+    <view class='section'>
+      <view>姓名</view>
+      <input name='name'></input>
+    </view>
+  </view>
+
+  <view class='container'>
+    <view class='section'>
+      <view>手机</view>
+      <input name='mobile' type='number'></input>
+    </view>
+  </view>
+
+  <view class='container'>
+    <view class='section'>
+      <view>学校</view>
+      <input name='school'></input>
+    </view>
+  </view>
+
+  <button form-type='submit'>提交</button>
+</form>

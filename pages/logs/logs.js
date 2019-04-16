@@ -1,15 +1,53 @@
-//logs.js
-const util = require('../../utils/util.js')
+const app = getApp();
 
 Page({
   data: {
-    logs: []
+    url: app.globalData.imgurl,
+    tel:'010-86466630',
   },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+  onLoad: function() {
+    var that = this;
+    wx.request({
+      url: app.globalData.api + 'grids',
+      success(res) {
+        console.log(res.data)
+        that.setData({
+          grids: res.data
+        })
+      },
+      fail() {
+        wx.showToast({
+          title: '网络连接失败',
+        })
+      }
     })
+    wx.request({
+      url: app.globalData.api + 'grids2',
+      success(res) {
+        console.log(res.data)
+        that.setData({
+          grids2: res.data
+        })
+      },
+      fail() {
+        wx.showToast({
+          title: '网络连接失败',
+        })
+      }
+    })
+  },
+  phoneCall: function () {
+    wx.makePhoneCall({
+      phoneNumber: this.data.tel,
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  fuzhi: function (e) {
+    wx.setClipboardData({
+      data: e.currentTarget.dataset.item,
+    })
+
   }
 })

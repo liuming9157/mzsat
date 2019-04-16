@@ -1,0 +1,38 @@
+<view class='container'>
+  <image src='http://qiniu.satapp.cn/sat/mingzhi.jpg' class='logo'></image>
+  <view class='title'>关于我们</view>
+  <view class='article'>明志教育，由刘明老师联合十余位考试培训专家共同创立，总部设于北京。明志教育专注于托福/SSAT/SAT /ACT/AMC/AP/SAT2等赴美留学考试，每年培训超过200名学员，因高分不断，被学员称为“标化考试的黄埔军校”。
+  </view>
+  <view class='article'>
+    明志教育坚持“小班教学、随时退费、定期反馈”三大制度，小班教学能够提高低龄化学生的课堂参与度，提高授课效果；随时退费保证无条件退费，从制度和根源两方面保证教师的授课质量；定期反馈则有效解决了低龄化学生家长对孩子学习不放心的问题。同时明志教育为解决外地学员学习问题，推出封闭营学习制度，为外地学员提供住宿，24小时督导学生学习及生活。</view>
+  <view class='title'>联系我们</view>
+  <view class='article' bindtap='tel'>咨询电话：
+    <text style='color:blue'>010-86466630</text>
+  </view>
+  <view bindtap='fuzhi' data-item='{{array[0]}}' class='article'>张老师微信：{{array[0]}}
+    <text style='color:gray;font-size:12px'>（点击复制）</text>
+  </view>
+  <view bindtap='fuzhi' data-item='{{array[1]}}' class='article'>QQ群1(2000人)：{{array[1]}}
+    <text style='color:gray;font-size:12px'>（点击复制）</text>
+  </view>
+  <view bindtap='fuzhi' data-item='{{array[2]}}' class='article'>QQ群2（2000人）：{{array[2]}}
+    <text style='color:gray;font-size:12px'>（点击复制）</text>
+  </view>
+  <view bindtap='fuzhi' data-item='{{array[3]}}' class='article'>微信服务号：{{array[3]}}
+    <text style='color:gray;font-size:12px'>（点击复制）</text>
+  </view>
+  <view bindtap='fuzhi' data-item='{{array[4]}}' class='article'>微信订阅号：{{array[4]}}
+    <text style='color:gray;font-size:12px'>（点击复制）</text>
+  </view>
+  <view bindtap='fuzhi' data-item='{{array[5]}}' class='article'>官方网站：{{array[5]}}
+    <text style='color:gray;font-size:12px'>（点击复制）</text>
+  </view>
+  <view class='article'>地址：北京市大兴区思邈路1号院</view>
+  <view style='display:flex;justify-content:center;width:100%;margin-top:50rpx'>
+    <button size='mini' type='primary' bindtap='goIndex'>返回首页</button>
+  </view>
+  <view class='foot'>
+    <view>”明志云“提供技术支持</view>
+    <view>明志云，明志旗下科技公司</view>
+  </view>
+</view>

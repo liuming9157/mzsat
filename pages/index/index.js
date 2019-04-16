@@ -4,10 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+   url:app.globalData.imgurl
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,6 +14,7 @@ Page({
     })
   },
   onLoad: function () {
+    var that=this;
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,6 +41,32 @@ Page({
         }
       })
     }
+    wx.request({
+      url: app.globalData.api + 'system',
+      success: function (res) {
+        console.log(res.data)
+        wx.setStorageSync('system', res.data)
+        that.setData({
+          system: res.data
+        })
+      }
+    })
+    wx.request({
+      url: app.globalData.api+'tiku',
+      success:function(res){
+        that.setData({
+          tiku:res.data
+        })
+      }
+    })
+    wx.request({
+      url: app.globalData.api+'slide',
+      success:function(res){
+        that.setData({
+          slide:res.data
+        })
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -51,15 +76,21 @@ Page({
       hasUserInfo: true
     })
   },
-  tominiapp:function(){
-    wx.navigateToMiniProgram({
-      appId: 'wx43463e997d47a2d5',
-    })
+  
+  cancel:function(){
+  this.setData({
+    cancel:true
+  })  
   },
-  tominiapp02: function () {
-    wx.navigateToMiniProgram({
-      appId: 'wx22d93a2d34272bbd',
-    })
+  huodong:function(){
+wx.navigateTo({
+  url: '../hd/hd',
+})
+  },
+  jump:function(e){
+wx.navigateTo({
+  url: e.currentTarget.dataset.url,
+})
   },
   onShareAppMessage(){
     return {

@@ -1,0 +1,14 @@
+<!--pages/cb/cb.wxml-->
+<view class='container1'>
+  <view class='title'>CB联系方式</view>
+  <view class='article'>（1）通用客服：866-630-93059（美国考生）</view>
+  <view class='article'>（2）通用客服：212-713-8000（国际考生）</view>
+  <view class='article'>（3）邮件咨询：sat@info.collegeboard.org</view>
+  <view class='article'>（4）SAT客服：866-756-7346（美国考生）</view>
+  <view class='article'>（5）SAT客服：212-713-7789（国际考生）</view>
+  <view class='article'>（6）账户问题：866-315-6068</view>
+  <view class='article'>温馨提示：您也可以通过我们联系美国大学理事会，我们将收取100元/次的服务费，事情不办好不收费。</view>
+</view>
+<view style='display:flex;justify-content:center;width:100%;margin-top:50rpx'>
+    <button size='mini' type='primary' bindtap='goIndex'>返回首页</button>
+  </view>

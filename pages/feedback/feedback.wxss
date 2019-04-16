@@ -1,0 +1,11 @@
+page{
+  background-color: #ccccff
+}
+.section{
+  display: flex;
+  flex-direction: row
+}
+.section>view{
+  width: 30%;
+  text-align: center
+}

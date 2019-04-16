@@ -1,0 +1,7 @@
+<!--pages/answer/downlink-og1.wxml-->
+<view class='container'>
+<text class='link02' selectable='true'>点击屏幕中间圆形按钮,复制地址粘贴到浏览器地址栏，使用浏览器下载</text>
+<view class='link02'></view>
+<text class='link02' selectable='true' style='overflow:scroll'>{{url}}</text>
+<button class='button' bindtap='copy' >一键复制</button>
+</view>

@@ -1,6 +1,26 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
+<view class='head' wx:if='{{grids.length!=0}}'>明志服务</view>
+<view class="weui-grids">
+  <block wx:for="{{grids}}" wx:key="*this">
+    <navigator  url="{{item.url}}" target="{{item.target}}"        app-id="{{item.appid}}" class="weui-grid" hover-class="weui-grid_active">
+      <image class="weui-grid__icon" src="{{url}}{{item.img}}" />
+      <view class="weui-grid__label">{{item.name}}</view>
+    </navigator>
   </block>
+</view>
+<block wx:if='{{grids2.length!=0}}'>
+  <view class='head'>第三方服务</view>
+  <view class="weui-grids">
+    <block wx:for="{{grids2}}" wx:key="*this">
+      <navigator url="{{item.url}}" target='{{item.target}}' app-id='{{item.app-id}}' class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="{{url}}{{item.img}}" />
+        <view class="weui-grid__label">{{item.name}}</view>
+      </navigator>
+    </block>
+  </view>
+</block>
+<!--footer-->
+<view class='foot'>
+ <view class='footItem'>©明志教育</view>
+ <view class='footItem'>客服电话：</view>
+ <view class='phoneNumber' bindtap='phoneCall'>{{tel}}</view>
 </view>

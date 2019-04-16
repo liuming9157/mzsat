@@ -1,34 +1,11 @@
-<!--pages/index/home.wxml-->
-<!--头像及昵称-->
-<view class="userinfo">
-  <view class="userinfo-avatar">
-    <open-data  type="userAvatarUrl"></open-data>
-  </view>
-    <open-data type="userNickName" class="usernickname"></open-data>
-</view>
-<view class='container02'>
-<view>1.重题情况</view>
-<view>(1)1605北美=OG5</view>
-<view>(2)1605亚太=OG6</view>
-<view>(3)1610北美=OG7</view>
-<view>(4)1701北美=OG8</view>
-<view>(5)1701亚太=1606北美</view>
-<view>(6)1805亚太=1804北美（1804北美是非公开考试，故在首页没有展现）</view>
-<view>(7)1808北美=1710亚太</view>
-<view>2.缺题说明</view>
-<view>(1)部分题目暂时没有拿到真题和答案</view>
-<view>(2)如您有相关资源，可以向我们提供，万分感谢。</view>
-<view>3.版权说明</view>
-<view>(1)小程序由明志教育免费提供，需要广告位来弥补服务器费用。如您能对广告进行点击，我们将不胜感激！</view>
-<view>(2)联系电话：010-86466630</view>
-<view>(3)QQ群1：308463095（2000人已满）</view>
-<view>(4)QQ群2：362066974（2000人未满）</view>
-<view>(5)张老师微信：zhang1993072601</view>
-</view>
 
-<view class='foot'>
- <view class='footItem'>©明志教育</view>
- <view class='footItem'>客服电话：</view>
- <view class='phoneNumber' bindtap='phoneCall'>010-86466630</view>
+
+<view class='container'>
+  <view class='title'>1.重题情况</view>
+  <view class='article' wx:for='{{chongti}}'>{{item}}</view>
+  <view class='title'>2.缺题及纠错</view>
+  <view class='article' wx:for='{{queti}}'>{{item}}</view>
 </view>
-<ad unit-id="adunit-0777556b3a79204e"></ad>
+<view style='display:flex;justify-content:center;width:100%;margin-top:50rpx'>
+    <button size='mini' type='primary' bindtap='goIndex'>返回首页</button>
+  </view>

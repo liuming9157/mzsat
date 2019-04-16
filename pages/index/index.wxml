@@ -1,195 +1,26 @@
 <!--index.wxml-->
-<view class='head'><image src='/image/logo.png' class='img'></image></view>
-<view class='head'>小程序由明志教育开发</view>
-<view class='head'>明志，专业从事托福/SAT/ACT/SSAT培训</view>
-<view class='title'>鸣谢：感谢以下同学纠正小程序中的错误答案（排名不分先后）</view>
-<view class='title'>王豪（北京四中）钟正和（北京四中）吴明哲（北京四中）贾卓凡（辽宁实验）杨洋（南京老师）</view>
-<navigator url='../answer/downlink-all' class='linkall'>
-打包下载所有真题</navigator>
-<view class='container'>
-<view class='test'>OG1</view>
-<navigator class='test link' url='../answer/answer-og1'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og1'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>OG2</view>
-<navigator class='test link' url='../answer/answer-og2'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og2'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>OG3</view>
-<navigator class='test link' url='../answer/answer-og3'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og3'>真题下载</navigator>
-</view><view class='container'>
-<view class='test'>OG4</view>
-<navigator class='test link' url='../answer/answer-og4'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og4'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>OG5</view>
-<navigator class='test link' url='../answer/answer-og5'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og5'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>OG6</view>
-<navigator class='test link' url='../answer/answer-og6'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og6'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>OG7</view>
-<navigator class='test link' url='../answer/answer-og7'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og7'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>OG8</view>
-<navigator class='test link' url='../answer/answer-og8'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-og8'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1603北美</view>
-<navigator class='test link' url='../answer/answer-1603na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1603na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1605北美</view>
-<navigator class='test link' url='../answer/answer-1605na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1605na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1605亚太</view>
-<navigator class='test link' url='../answer/answer-1605asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1605asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1606北美</view>
-<navigator class='test link' url='../answer/answer-1606na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1606na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1606亚太</view>
-<navigator class='test link' url='../answer/answer-1606asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1606asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1610北美</view>
-<navigator class='test link' url='../answer/answer-1610na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1610na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1610亚太</view>
-<navigator class='test link' url='../answer/answer-1610asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1610asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1611北美</view>
-<navigator class='test link' url='../answer/answer-1611na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1611na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1611亚太</view>
-<navigator class='test link' url='../answer/answer-1611asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1611asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1612北美</view>
-<navigator class='test link' url='../answer/answer-1612na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1612na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1612亚太</view>
-<navigator class='test link' url='../answer/answer-1612asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1612asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1701北美</view>
-<navigator class='test link' url='../answer/answer-1701na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1701na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1701亚太</view>
-<navigator class='test link' url='../answer/answer-1701asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1701asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1703北美</view>
-<navigator class='test link' url='../answer/answer-1703na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1703na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1705北美</view>
-<navigator class='test link' url='../answer/answer-1705na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1705na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1705亚太</view>
-<navigator class='test link' url='../answer/answer-1705asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1705asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1706北美</view>
-<navigator class='test link' url='../answer/answer-1706na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1706na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1708北美</view>
-<navigator class='test link' url='../answer/answer-1708na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1708na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1710北美</view>
-<navigator class='test link' url='../answer/answer-1710na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1710na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1710亚太</view>
-<navigator class='test link' url='../answer/answer-1710asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1710asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1711北美</view>
-<navigator class='test link' url='../answer/answer-1711na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1711na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1712北美</view>
-<navigator class='test link' url='../answer/answer-1712na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1712na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1712亚太</view>
-<navigator class='test link' url='../answer/answer-1712asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1712asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1803北美</view>
-<navigator class='test link' url='../answer/answer-1803na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1803na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1803亚太</view>
-<navigator class='test link' url='../answer/answer-1803asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1803asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1805北美</view>
-<navigator class='test link' url='../answer/answer-1805na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1805na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1805亚太</view>
-<navigator class='test link' url='../answer/answer-1805asia'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1805asia'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1806北美</view>
-<navigator class='test link' url='../answer/answer-1806na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1806na'>真题下载</navigator>
-</view>
-<view class='container'>
-<view class='test'>1808北美</view>
-<navigator class='test link' url='../answer/answer-1808na'>答案</navigator>
-<navigator class='test link' url='../answer/downlink-1808na'>真题下载</navigator>
-</view>
-<view bindtap='tominiapp' class='linkall' >SAT课外阅读</view>
+<swiper autoplay='true' indicator-dots='true' wx:if="{{slide}}">
+<swiper-item wx:for="{{slide}}">
+<image src='{{url}}{{item.src}}' bindtap='jump' data-url='{{item.url}}'></image>
+</swiper-item>
+</swiper>
+<official-account></official-account>
 
-<view bindtap='tominiapp02' class='linkall' >点我可以用手机刷题</view>
+<navigator url='../answer/downlink?id=0' class='linkall'>
+  打包下载所有真题</navigator>
+<view class='container' wx:for='{{tiku}}'>
+  <view class='test'>{{item.title}}</view>
+  <navigator class='test link' url='../answer/answer?id={{item.id}}'>答案</navigator>
+  <navigator class='test link' url='../answer/downlink?id={{item.id}}'>真题下载</navigator>
+</view>
+
+
+ <!--弹出层-->
+  <view class='pop_out' wx:if='{{system.is_popout==1}}' hidden='{{cancel}}'>
+  <view class='line'></view>
+    <icon class='icon' type='cancel' size='35px' bindtap='cancel'></icon>
+    <image src='{{url}}{{system.popout_url}}'></image>
+    
+  </view>
+  <view class='cloud' wx:if='{{system.is_popout==1}}' hidden='{{cancel}}'></view>
+  
