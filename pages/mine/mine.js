@@ -3,9 +3,9 @@ const app = getApp();
 Page({
   data: {
     url: app.globalData.imgurl,
-    tel:'010-86466630',
+    tel: '010-86466630',
   },
-  onLoad: function() {
+  onLoad: function () {
     var that = this;
     wx.request({
       url: app.globalData.api + 'grids',

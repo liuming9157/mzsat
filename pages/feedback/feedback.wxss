@@ -1,5 +1,5 @@
 page{
-  background-color: #ccccff
+  background-color: #13227a
 }
 .section{
   display: flex;
@@ -8,4 +8,8 @@ page{
 .section>view{
   width: 30%;
   text-align: center
+}
+.button{
+  margin: 10px;
+  background-color: blue
 }

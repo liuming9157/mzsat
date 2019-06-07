@@ -1,22 +1,21 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/index/home",
+    "pages/mine/mine",
     "pages/answer/answer",
-    "pages/answer/downlink",
+    "pages/downlink/downlink",
     "pages/hd/hd",
     "pages/feedback/feedback",
     "pages/contact/contact",
-    "pages/cb/cb"
-    
+    "pages/cb/cb",
+    "pages/guilv/guilv"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#ccccff",
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#13227a",
     "navigationBarTitleText": "明志SAT",
-    "navigationBarTextStyle":"black",
-    "backgroundColor":"#ccccff"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#13227a"
   },
   "tabBar": {
     "color": "#7a7e83",
@@ -31,18 +30,18 @@
         "text": "答案"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/mine/mine",
         "iconPath": "image/icon_home.png",
         "selectedIconPath": "image/icon_home_hl.png",
         "text": "我的"
       }
     ]
   },
-    "navigateToMiniProgramAppIdList": [
-      "wx22d93a2d34272bbd",
-      "wx43463e997d47a2d5",
-      "wx8e9b3280e250e423",
-      "wx86a0f112f203b1a2"
-
-    ]
+  "navigateToMiniProgramAppIdList": [
+    "wx22d93a2d34272bbd",
+    "wx43463e997d47a2d5",
+    "wx8e9b3280e250e423",
+    "wx86a0f112f203b1a2"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

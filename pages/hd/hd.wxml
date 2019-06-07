@@ -1,1 +1,1 @@
-<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button> 
+<button open-type="feedback">获取手机号</button> 

@@ -29,5 +29,6 @@
     </view>
   </view>
 
-  <button form-type='submit'>提交</button>
+  <button form-type='submit' class='button'>提交</button>
+  <button form-type='reset' class='button'>清空重填</button>
 </form>

@@ -32,7 +32,7 @@
     <button size='mini' type='primary' bindtap='goIndex'>返回首页</button>
   </view>
   <view class='foot'>
-    <view>”明志云“提供技术支持</view>
+    <view>“明志云”提供技术支持</view>
     <view>明志云，明志旗下科技公司</view>
   </view>
 </view>
