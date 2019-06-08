@@ -1,8 +1,5 @@
-<!--pages/answer/downlink-og1.wxml-->
 <view class='container'>
-<text class='link02' selectable='true'>下载地址：</text>
-
-<text class='link02' selectable='true' style='overflow:scroll'>{{url}}</text>
+<text class='downlink' selectable='true'>{{url}}</text>
 <button class='button' bindtap='copy' >一键复制</button>
 </view>
 
