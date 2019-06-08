@@ -9,3 +9,8 @@
   transform: translate(-50%,-50%);
   line-height: 250rpx
 }
+.downlink{
+  width: 100%;
+  text-align: left;
+  word-wrap: break-word
+}
