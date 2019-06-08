@@ -8,11 +8,11 @@ Page({
   onLoad: function () {
     var that = this;
     wx.request({
-      url: app.globalData.api + 'grids',
+      url: app.globalData.api + 'grid1',
       success(res) {
-        console.log(res.data)
+        console.log(res.data.data)
         that.setData({
-          grids: res.data
+          grids: res.data.data
         })
       },
       fail() {
@@ -22,11 +22,11 @@ Page({
       }
     })
     wx.request({
-      url: app.globalData.api + 'grids2',
+      url: app.globalData.api + 'grid2',
       success(res) {
-        console.log(res.data)
+        console.log(res.data.data)
         that.setData({
-          grids2: res.data
+          grids2: res.data.data
         })
       },
       fail() {

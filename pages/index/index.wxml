@@ -1,17 +1,17 @@
 <!--index.wxml-->
 <swiper autoplay='true' indicator-dots='true' wx:if="{{slide}}">
   <swiper-item wx:for="{{slide}}">
-    <image src='{{url}}{{item.src}}' bindtap='jump' data-url='{{item.url}}'></image>
+    <image src='{{url}}{{item.image}}' bindtap='jump' data-url='{{item.url}}'></image>
   </swiper-item>
 </swiper>
 <official-account></official-account>
 
-<navigator url='../answer/downlink?id=0' class='linkall'>
+<navigator url='../downlink/downlink?id=0' class='linkall'>
   打包下载所有真题</navigator>
 <view class='container' wx:for='{{tiku}}'>
   <view class='test'>{{item.title}}</view>
   <navigator class='test link' url='../answer/answer?id={{item.id}}'>答案</navigator>
-  <navigator class='test link' url='../answer/downlink?id={{item.id}}'>真题下载</navigator>
+  <navigator class='test link' url='../downlink/downlink?id={{item.id}}'>真题下载</navigator>
 </view>
 
 
@@ -19,7 +19,7 @@
 <view class='pop_out' wx:if='{{system.is_popout==1}}' hidden='{{cancel}}'>
   <!-- <view class='line'></view> -->
   <icon class='icon' type='cancel' size='35px' bindtap='cancel'></icon>
-  <image src='{{url}}{{system.popout_url}}'></image>
+  <image src='{{url}}{{system.popout_image}}'></image>
 <!-- 遮罩 -->
 </view>
 <view class='cloud' wx:if='{{system.is_popout==1}}' hidden='{{cancel}}'></view>

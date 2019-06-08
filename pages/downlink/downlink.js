@@ -35,10 +35,10 @@ Page({
         },
         success: function (res) {
           wx.setNavigationBarTitle({
-            title: res.data.title + '真题下载地址',
+            title: res.data.data.title + '真题下载地址',
           })
           that.setData({
-            url: res.data.link
+            url: res.data.data.link
           })
         }
       })

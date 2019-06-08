@@ -37,10 +37,10 @@ Page({
     wx.request({
       url: app.globalData.api + 'system',
       success: function (res) {
-        console.log(res.data)
-        wx.setStorageSync('system', res.data)
+        console.log(res.data.data)
+        wx.setStorageSync('system', res.data.data)
         that.setData({
-          system: res.data
+          system: res.data.data
         })
       }
     })
@@ -48,7 +48,7 @@ Page({
       url: app.globalData.api+'tiku',
       success:function(res){
         that.setData({
-          tiku:res.data
+          tiku:res.data.data
         })
       }
     })
@@ -56,30 +56,19 @@ Page({
       url: app.globalData.api+'slide',
       success:function(res){
         that.setData({
-          slide:res.data
+          slide:res.data.data
         })
       }
     })
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
+
   
   cancel:function(){
   this.setData({
     cancel:true
   })  
   },
-  huodong:function(){
-wx.navigateTo({
-  url: '../hd/hd',
-})
-  },
+ 
   jump:function(e){
 wx.navigateTo({
   url: e.currentTarget.dataset.url,

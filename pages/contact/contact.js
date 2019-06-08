@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-array:['13738866091','308463095','362066974','mzsat01','mzsat02','www.mzsat.cn'],
-    array1: ['http://qiniu.satapp.cn/sat/pengfei.jpg', 'http://qiniu.satapp.cn/sat/mzsat01.jpg', 'http://qiniu.satapp.cn/sat/mzsat02.jpg']
+array:['13738866091','308463095','362066974','mzsat01','mzsat02','www.mzsat.cn']
+    
   },
   goIndex:function(){
     wx.switchTab({

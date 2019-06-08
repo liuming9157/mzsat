@@ -1,8 +1,8 @@
 <view class='head' wx:if='{{grids.length!=0}}'>明志服务</view>
 <view class="weui-grids">
   <block wx:for="{{grids}}" wx:key="*this">
-    <navigator  url="{{item.url}}" target="{{item.target}}"        app-id="{{item.appid}}" class="weui-grid" hover-class="weui-grid_active">
-      <image class="weui-grid__icon" src="{{url}}{{item.img}}" />
+    <navigator  url="{{item.url}}" target="{{item.type}}"        app-id="{{item.appid}}" class="weui-grid" hover-class="weui-grid_active">
+      <image class="weui-grid__icon" src="{{url}}{{item.image}}" />
       <view class="weui-grid__label">{{item.name}}</view>
     </navigator>
   </block>
@@ -11,8 +11,8 @@
   <view class='head'>第三方服务</view>
   <view class="weui-grids">
     <block wx:for="{{grids2}}" wx:key="*this">
-      <navigator url="{{item.url}}" target='{{item.target}}' app-id='{{item.app-id}}' class="weui-grid" hover-class="weui-grid_active">
-        <image class="weui-grid__icon" src="{{url}}{{item.img}}" />
+      <navigator url="{{item.url}}" target='{{item.type}}' app-id='{{item.app-id}}' class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="{{url}}{{item.image}}" />
         <view class="weui-grid__label">{{item.name}}</view>
       </navigator>
     </block>

@@ -27,12 +27,12 @@ Page({
       },
       success:function(res){
         wx.setNavigationBarTitle({
-          title: res.data.title,
+          title: res.data.data.title,
         })
-        var reading=res.data.reading.split(',');
-        var writing = res.data.writing.split(',')
-        var math1 = res.data.math1.split(',')
-        var math2 = res.data.math2.split(',')
+        var reading=res.data.data.reading.split(',');
+        var writing = res.data.data.writing.split(',')
+        var math1 = res.data.data.math1.split(',')
+        var math2 = res.data.data.math2.split(',')
         that.setData({
           reading:reading,
           writing:writing,
