@@ -6,8 +6,8 @@ App({
  
   globalData: {
     userInfo: null,
-    api: 'http://admin.mzyun.tech/api/sat/',
-    imgurl: 'http://admin.mzyun.tech',
+    api: 'https://promotion.mzsat.cn/api/sat/',
+    imgurl: 'https://promotion.mzsat.cn',
   }
 
 })

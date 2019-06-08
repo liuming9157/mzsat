@@ -16,10 +16,10 @@
 
 
 <!--弹出层-->
-<view class='pop_out' wx:if='{{system.is_popout==1}}' hidden='{{cancel}}'>
+<view class='pop_out' wx:if='{{system.popswitch==1}}' hidden='{{cancel}}'>
   <!-- <view class='line'></view> -->
   <icon class='icon' type='cancel' size='35px' bindtap='cancel'></icon>
   <image src='{{url}}{{system.popout_image}}'></image>
 <!-- 遮罩 -->
 </view>
-<view class='cloud' wx:if='{{system.is_popout==1}}' hidden='{{cancel}}'></view>
+<view class='cloud' wx:if='{{system.popswitch==1}}' hidden='{{cancel}}'></view>
